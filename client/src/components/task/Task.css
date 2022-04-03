@@ -1,0 +1,31 @@
+.task {
+  padding: 10px;
+  background-color: #fff;
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+  border-radius: 8px;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.task:hover {
+  background-color: #8f9ee2;
+}
+
+.task:active {
+  background-color: #7ae793;
+}
+
+.task:hover .todo-btnText {
+  transform: scale(1.08);
+}
+
+.task:active .todo-btnText {
+  transform: scale(0.9);
+  color: #fff;
+}

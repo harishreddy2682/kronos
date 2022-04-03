@@ -1,0 +1,132 @@
+.todo-ms-header {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.todo-ms-header h3 {
+  font-size: 2.5rem;
+}
+
+.todo-ms-container {
+  width: 78.2vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.no-todos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.no-todos-container p {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.no-todos-container p strong {
+  margin: 0 10px;
+  font-size: 40px;
+}
+
+.todo-ms-box {
+  margin: 10px 20px 30px;
+  padding: 5px;
+}
+
+.todo-ms-box-text {
+  padding: 10px 30px;
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+  background-color: #fff;
+  font-size: 15px;
+  transition: all 200ms;
+  border-radius: 10px;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+}
+
+.todo-ms-box-text:hover {
+  background-color: #f5f5f5;
+}
+
+.todo-ms-box:hover .todo-ms-box-text {
+  transform: scale(1.1);
+}
+
+.todo-ms-box:hover .todo-ms-icon {
+  transform: translateY(0.3rem);
+}
+
+.todo-ms-icon {
+  padding: 7px;
+  font-size: 13px;
+  float: right;
+  cursor: pointer;
+  margin: 7px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 200ms;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.292);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.292);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.292);
+}
+
+.todo-ms-icon:hover {
+  border-radius: 20px;
+}
+
+#tdms-delete:active {
+  background-color: rgb(243, 85, 85);
+  color: #fff;
+}
+#tdms-edit:active {
+  background-color: rgb(240, 189, 78);
+  color: #fff;
+}
+
+.todo-ms-add-btn {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  bottom: 5vh;
+  right: 3vw;
+  transition: all 200ms cubic-bezier(0, 1.1, 0.67, 1.1);
+  background-color: #000000;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+}
+
+.todo-ms-add-btn:hover {
+  background-color: #252525;
+}
+
+.todo-ms-add-icon {
+  color: #fff;
+  transition: all 200ms cubic-bezier(0, 1.1, 0.67, 1.1);
+}
+
+.todo-ms-add-btn:hover .todo-ms-add-icon {
+  transform: scale(1.3);
+}
+.todo-ms-add-btn:active {
+  background-color: #dddf6d;
+  transform: scale(0.9);
+}

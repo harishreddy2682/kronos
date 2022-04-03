@@ -1,0 +1,113 @@
+body,
+html {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.register-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  bottom: 3vh;
+}
+.register-container h1 {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.register-box {
+  background-color: #fff;
+  padding: 1vh 13vh 5vh 13vh;
+  border-radius: 20px;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+}
+#register-email,
+#register-password,
+#register-name {
+  display: block;
+  margin-bottom: 3vh;
+  border-radius: 7px;
+  padding: 10px 12px;
+  border: 0;
+  width: 15vw;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.08);
+  transition: all 200ms;
+}
+
+#register-email[placeholder],
+#register-password[placeholder] {
+  font-family: "Nunito", sans-serif;
+}
+
+#register-email:focus-visible,
+#register-name:focus-visible,
+#register-password:focus-visible {
+  outline-style: 0;
+  outline-width: 0;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+}
+label[for="email"],
+label[for="password"],
+label[for="name"] {
+  font-weight: bold;
+  display: block;
+  margin: 0.4vw 0;
+}
+
+.register-box h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+#register-btn {
+  cursor: pointer;
+  position: relative;
+  background-color: #3886e6;
+  border-radius: 5px;
+  float: right;
+  border: 0;
+  padding: 1vh 1vw;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  transition: all 200ms cubic-bezier(0, 1.1, 0.67, 1.1);
+  left: 3vw;
+}
+
+#register-btn:hover {
+  background-color: #65a0e7;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+}
+#register-btn:active {
+  background-color: #4fd87b;
+  transform: scale(0.9);
+}
+
+.register-bottom-text {
+  display: block;
+  position: relative;
+  top: 1vh;
+  font-size: smaller;
+  width: fit-content;
+}
+
+#otp-text {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 3vh 0;
+}

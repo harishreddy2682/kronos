@@ -1,0 +1,28 @@
+{
+  "name": "kronos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon server",
+    "client": "cd client && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.4",
+    "nodemailer": "^6.7.2",
+    "otp-generator": "^4.0.0"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.15"
+  }
+}

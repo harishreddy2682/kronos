@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .nav-sidebar {
+    position: fixed;
+    height: 100%;
+    width: 4rem;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+    -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+    -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  }
+  
+  .nav-sidebar .nav-home {
+    margin: 0.7rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    transition: all 200ms;
+    cursor: pointer;
+  }
+  
+  .nav-home:hover {
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.849);
+  }
+  
+  .nav-sidebar hr {
+    width: 30px;
+    height: 1.7px;
+    background-color: rgba(0, 0, 0, 0.149);
+    border-style: none;
+    border-radius: 10px;
+  }
+  
+  .nav-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    transition: all 200ms;
+    user-select: none;
+  }
+  
+  .nav-item:hover {
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  #nav-log-button[aria-label="loggedOut"]:hover {
+    background-color: rgb(213, 87, 87);
+  }
+  
+  #nav-log-button[aria-label="loggedIn"]:hover {
+    background-color: rgb(201, 128, 235);
+  }
+  
+  #nav-todolist:hover {
+    background-color: rgb(240, 133, 84);
+  }
+  
+  #nav-stickies:hover {
+    background-color: rgb(241, 218, 85);
+  }
+  
+  #nav-pomodoro:hover {
+    background-color: rgb(235, 89, 240);
+  }
+  
+  #nav-diary:hover {
+    background-color: rgb(87, 213, 112);
+  }
+  
+  #nav-hydration:hover {
+    background-color: rgb(82, 154, 243);
+  }
+  
+  .nav-item-label {
+    transition: all 200ms;
+    color: #fff;
+    pointer-events: none;
+    position: fixed;
+    content: "testtext";
+    left: 4rem;
+    background-color: rgba(0, 0, 0, 0.256);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 7px;
+    opacity: 0;
+  }
+  
+  .nav-item:hover .nav-item-label,
+  .nav-home:hover .nav-item-label {
+    opacity: 1;
+    left: 5rem;
+  }
