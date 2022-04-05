@@ -3,6 +3,7 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { userLoginReducer, userRegisterReducer, userActivateReducer } from './reducers/userReducer'
 import { todoListsReducer, todoCreateReducer, todoDeleteReducer, getTasksReducer, addTaskReducer, deleteTaskReducer } from './reducers/todoReducer'
+import { stickiesListReducer, deleteStickyReducer, createStickyReducer, getStickyReducer, updateStickyReducer } from './reducers/stickyReducer'
 
 const reducers = combineReducers({
     userLogin: userLoginReducer,
@@ -13,7 +14,12 @@ const reducers = combineReducers({
     deleteTodo: todoDeleteReducer,
     getTasks: getTasksReducer,
     addTask: addTaskReducer,
-    deleteTask: deleteTaskReducer
+    deleteTask: deleteTaskReducer,
+    stickiesList: stickiesListReducer,
+    deleteSticky: deleteStickyReducer,
+    createSticky: createStickyReducer,
+    getSticky: getStickyReducer,
+    updateSticky: updateStickyReducer
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null

@@ -7,9 +7,12 @@ import Otp from './screens/otp/Otp';
 import ToDoMainScreen from './screens/todolist/ToDoMainScreen';
 import ToDoEditScreen from './screens/todolist/ToDoEditScreen'
 import ToDoListScreen from './screens/todolist/ToDoListScreen'
+import StickiesScreen from './screens/stickies/StickiesScreen';
+import StickiesEditScreen from './screens/stickies/StickiesEditScreen';
 import axios from 'axios'
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
+import { getLoggedUser } from './utils/getLoggedUser'
 axios.defaults.withCredentials = true
 
 
@@ -20,23 +23,10 @@ function App() {
   const { userInfo } = useSelector(state => state.userLogin)
 
   useEffect(() => {
-    const getLoggedUser = async () => {
-      try {
-        const res = await axios.get('http://localhost:5000/api/user/')
-        if (res.status === 200) {
-          dispatch({
-            type: 'USER_LOGIN_SUCCESS',
-            payload: res.data
-          })
-        }
-      } catch (error) {
-        dispatch({ type: 'USER_LOGOUT' })
-      }
+    if (userInfo === null) {
+      dispatch(getLoggedUser())
     }
-    if (!userInfo) {
-      getLoggedUser()
-    }
-  }, [userInfo, dispatch])
+  }, [dispatch, userInfo])
   return (
     <BrowserRouter>
       <Routes>
@@ -47,6 +37,9 @@ function App() {
         <Route path='/todolist' element={<ToDoMainScreen />} />
         <Route path='/todolist/new' element={<ToDoEditScreen />} />
         <Route path='/todolist/tasks/:id' element={<ToDoListScreen />} />
+        <Route path='/stickies' element={<StickiesScreen />} />
+        <Route path='/stickies/edit/:id' element={<StickiesEditScreen />} />
+
 
       </Routes>
     </BrowserRouter>

@@ -6,6 +6,7 @@ import colors from 'colors'
 import connectDB from './config/db.js'
 import userRouter from './routes/userRoutes.js'
 import todoRouter from './routes/todoRoutes.js'
+import stickyRouter from './routes/stickyRoutes.js'
 
 dotenv.config()
 connectDB()
@@ -21,6 +22,7 @@ app.use(cookieParser())
 
 app.use('/api/user', userRouter)
 app.use('/api/todo', todoRouter)
+app.use('/api/sticky', stickyRouter)
 
 
 

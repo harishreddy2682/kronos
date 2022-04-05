@@ -1,0 +1,64 @@
+.stickies-box {
+  width: 225px;
+  height: fit-content;
+  border-radius: 20px;
+  margin: 2.5vh 2vw;
+  transition: all 200ms cubic-bezier(0, 1.1, 0.67, 1.1);
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+}
+
+.stickies-box:hover {
+  transform: scale(1.07);
+}
+
+.stickies-box .stickies-title {
+  padding: 1.3rem 1.3rem 0 1.3rem;
+}
+
+.stickies-box .stickies-content {
+  padding: 1.3rem 1.3rem 0.5rem 1.3rem;
+  font-size: 12px;
+  overflow-wrap: break-word;
+}
+
+.stickies-btns {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#stickies-delete-icon,
+#stickies-edit-icon {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  transition: all 200ms;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+#stickies-delete-icon:hover,
+#stickies-edit-icon:hover {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.156);
+}
+
+#stickies-delete-icon:active {
+  background-color: rgb(240, 76, 76);
+  color: #fff;
+}
+#stickies-edit-icon:active {
+  background-color: rgb(235, 204, 68);
+  color: #fff;
+}
+
+#stickies-delete-icon:active i,
+#stickies-edit-icon:active i {
+  transform: scale(0.8);
+}

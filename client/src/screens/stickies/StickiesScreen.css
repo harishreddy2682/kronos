@@ -1,0 +1,79 @@
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(201, 201, 201);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #848484;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.stickies-header {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.stickies-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.stickies-header p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.stickies-container {
+  margin: 0 auto;
+  width: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.sticky-add-btn {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  bottom: 5vh;
+  right: 3vw;
+  transition: all 200ms cubic-bezier(0, 1.1, 0.67, 1.1);
+  background-color: #000000;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+}
+
+.sticky-add-btn:hover {
+  background-color: #252525;
+}
+
+.sticky-add-icon {
+  color: #fff;
+  transition: all 200ms cubic-bezier(0, 1.1, 0.67, 1.1);
+}
+
+.sticky-add-btn:hover .sticky-add-icon {
+  transform: scale(1.3);
+}
+.sticky-add-btn:active {
+  background-color: #dddf6d;
+  transform: scale(0.9);
+}

@@ -1,0 +1,133 @@
+.sticky-edit-body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+
+.sticky-edit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sticky-edit-box {
+  width: 50rem;
+  height: 37rem;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+}
+
+#sticky-edit-title {
+  padding: 0.3rem 1rem;
+  margin: 1.2rem 0 1.2rem 2.3rem;
+  transition: all 200ms;
+  width: 43.5rem;
+  height: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.1);
+}
+
+#sticky-edit-content {
+  border-radius: 10px;
+  transition: all 200ms;
+  padding: 1rem;
+  border: 0;
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 43.5rem;
+  height: 26rem;
+  resize: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.07);
+}
+
+#sticky-edit-title:focus-visible,
+#sticky-edit-content:focus-visible {
+  outline: 0;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+}
+
+.sticky-edit-save-btn {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: all 200ms;
+  border-radius: 30px;
+}
+.edit-save-btn {
+  transition: all 200ms;
+  padding: 0.5rem;
+  user-select: none;
+}
+
+.sticky-edit-save-btn:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.313);
+}
+
+.sticky-edit-save-btn:hover .edit-save-btn {
+  color: #fff;
+  transform: scale(0.8);
+}
+
+.sticky-edit-save-btn:active {
+  background-color: rgb(132, 233, 89);
+}
+
+.sticky-edit-save-btn:active .edit-save-btn {
+  transform: scale(1);
+}
+
+.sticky-edit-delete-btn {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: all 200ms;
+  border-radius: 30px;
+}
+.edit-delete-btn {
+  transition: all 200ms;
+  padding: 0.5rem;
+  user-select: none;
+}
+
+.sticky-edit-delete-btn:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.313);
+}
+
+.sticky-edit-delete-btn:hover .edit-delete-btn {
+  color: #fff;
+  transform: scale(0.8);
+}
+
+.sticky-edit-delete-btn:active {
+  background-color: rgb(233, 89, 89);
+}
+
+.sticky-edit-delete-btn:active .edit-delete-btn {
+  transform: scale(1);
+}

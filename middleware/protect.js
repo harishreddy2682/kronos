@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken"
+import User from "../models/userModel.js"
 
 const protect = async (req, res, next) => {
     try {
@@ -7,8 +8,10 @@ const protect = async (req, res, next) => {
             return res.status(401).json({ msg: "No token." })
         }
         const decoded = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET)
+        const user = await User.findById(decoded.id)
+        
+        req.userId = user._id
 
-        req.userId = decoded.id
         return next()
     } catch (err) {
         return res.status(401).json({ msg: err.message })
