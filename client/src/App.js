@@ -9,6 +9,8 @@ import ToDoEditScreen from './screens/todolist/ToDoEditScreen'
 import ToDoListScreen from './screens/todolist/ToDoListScreen'
 import StickiesScreen from './screens/stickies/StickiesScreen';
 import StickiesEditScreen from './screens/stickies/StickiesEditScreen';
+import HydrationScreen from './screens/hydration-tracker/HydrationScreen'
+import PomodoroScreen from './screens/pomodoro/PomodoroScreen'
 import axios from 'axios'
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
@@ -39,6 +41,8 @@ function App() {
         <Route path='/todolist/tasks/:id' element={<ToDoListScreen />} />
         <Route path='/stickies' element={<StickiesScreen />} />
         <Route path='/stickies/edit/:id' element={<StickiesEditScreen />} />
+        <Route path='/hydration-tracker' element={<HydrationScreen />} />
+        <Route path='/pomodoro' element={<PomodoroScreen />} />
 
 
       </Routes>

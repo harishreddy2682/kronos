@@ -13,7 +13,7 @@ function App() {
   const { id: todoId } = useParams()
   const dispatch = useDispatch()
 
-  const { todoList, tasks } = useSelector(state => state.getTasks)
+  const { tasks } = useSelector(state => state.getTasks)
   const { success: addSuccess } = useSelector(state => state.addTask)
   const { success: deleteSuccess } = useSelector(state => state.deleteTask)
 
