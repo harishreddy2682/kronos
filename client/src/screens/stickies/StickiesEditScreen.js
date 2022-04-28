@@ -35,8 +35,9 @@ const StickiesEditScreen = () => {
       dispatch({
         type: 'UPDATE_STICKY_RESET'
       })
+      navigate('/stickies')
     }
-  }, [dispatch, stickyId, updateSuccess])
+  }, [dispatch, stickyId, updateSuccess, navigate])
 
   const saveHandler = () => {
     dispatch(updateSticky(stickyId, title, content))

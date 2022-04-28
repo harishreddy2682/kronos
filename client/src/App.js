@@ -11,6 +11,7 @@ import StickiesScreen from './screens/stickies/StickiesScreen';
 import StickiesEditScreen from './screens/stickies/StickiesEditScreen';
 import HydrationScreen from './screens/hydration-tracker/HydrationScreen'
 import PomodoroScreen from './screens/pomodoro/PomodoroScreen'
+import ValuationCarousel from './screens/valuationCarousel/ValuationCarousel';
 import axios from 'axios'
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
@@ -43,7 +44,7 @@ function App() {
         <Route path='/stickies/edit/:id' element={<StickiesEditScreen />} />
         <Route path='/hydration-tracker' element={<HydrationScreen />} />
         <Route path='/pomodoro' element={<PomodoroScreen />} />
-
+        <Route path='/phase2' element={<ValuationCarousel />} />
 
       </Routes>
     </BrowserRouter>

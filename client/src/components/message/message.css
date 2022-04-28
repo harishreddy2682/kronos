@@ -17,6 +17,7 @@ body {
   position: absolute;
   bottom: 90vh;
   left: 30vw;
+  z-index: 1;
   animation-duration: 2s;
   animation-name: slideIn;
   animation-timing-function: ease-in-out;

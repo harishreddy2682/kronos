@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     if(!userInfo){
-      navigate('/')
+      navigate('http://127.0.0.1:5500/index.html')
     }
   }, [userInfo, navigate])
 
